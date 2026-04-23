@@ -1,0 +1,48 @@
+## Interface: 40400
+## Title: Bastion
+## Notes: Bastion automation framework
+## Author: Bastion
+## SavedVariables: BastionDB
+
+# 初始化
+init.lua
+
+# 核心类（无依赖）
+src/ClassMagic/ClassMagic.lua
+src/List/List.lua
+src/NotificationsList/NotificationsList.lua
+src/Vector3/Vector3.lua
+src/Sequencer/Sequencer.lua
+src/Command/Command.lua
+src/Cache/Cache.lua
+src/Cacheable/Cacheable.lua
+src/Refreshable/Refreshable.lua
+
+# 核心类（有依赖）
+src/Unit/Unit.lua
+src/Aura/Aura.lua
+src/APL/APL.lua
+src/Module/Module.lua
+src/UnitManager/UnitManager.lua
+src/ObjectManager/ObjectManager.lua
+src/EventManager/EventManager.lua
+src/Spell/Spell.lua
+src/SpellBook/SpellBook.lua
+src/Item/Item.lua
+src/ItemBook/ItemBook.lua
+src/AuraTable/AuraTable.lua
+src/Class/Class.lua
+src/Timer/Timer.lua
+
+# UI
+src/StatusFrame/StatusFrame.lua
+
+# 引导启动（创建实例、注册事件、启动 Ticker）
+bootstrap.lua
+
+# 职业 UI（依赖 Bastion.Globals 和 Bastion:Debug，必须在 bootstrap 之后）
+src/herui/hunter.lua
+
+# 职业脚本
+scripts/BeastMasterModule.lua
+scripts/SurvivalModule.lua
