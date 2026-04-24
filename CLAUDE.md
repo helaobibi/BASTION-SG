@@ -133,3 +133,7 @@ APL:Execute()
 - 访问对象前检查 `Exists`/`IsAlive` 等条件
 - 频繁计算的数据通过 `Cache`/`Cacheable`/`Refreshable` 复用
 - UI 位置数据存储在 `BastionDB` SavedVariables 中，WoW 登出时自动保存
+
+## 缓存表结构详解
+
+详见 [CACHE_STRUCTURES.md](CACHE_STRUCTURES.md)
