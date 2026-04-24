@@ -225,7 +225,7 @@ function Spell:Cast(unit, condition)
     end
 
     -- Cast the spell
-    CastSpellByID(self:GetID(), u)
+    Unlock('CastSpellByID', self:GetID(), u)
 
     Bastion:Debug("Casting", self)
 
@@ -260,7 +260,7 @@ function Spell:ForceCast(unit)
     end
 
     -- Cast the spell
-    CastSpellByID(self:GetID(), u)
+    Unlock('CastSpellByID', self:GetID(), u)
 
     Bastion:Debug("Casting", self)
 
